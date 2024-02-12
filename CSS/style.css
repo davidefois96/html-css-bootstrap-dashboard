@@ -1,21 +1,31 @@
 body{height: 100vh;}
 
 
-img{
-  max-width: 100%;
-  max-height: 100%;
 
-}
 
-nav ul{list-style: none;}
+ul{list-style: none;}
 
 
 nav{height: 70px;}
 
 
+aside {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  
+  
+
+}
+
+aside a{color: white;}
 
 
+#res{
+  height: 45px;
+  width:45px;
+ 
 
+}
 
 nav form, input {
   
@@ -29,4 +39,13 @@ aside{
   height:100%;
   background-image: url("../assets/img/sidebar-bg.png");
   background-color: #051e34;
+}
+
+@media screen and (max-width:992px) {
+
+  
+  aside {width: 68px;}
+
+  
+  
 }
