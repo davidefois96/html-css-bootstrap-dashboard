@@ -1,122 +1,53 @@
-
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-
-
-}
-
-
 body{
   height: 100vh;
-
   font-family: 'Roboto', sans-serif;
-
-}
-
-
-
-#navcolor{background-color: #e5e5e5;}
-
-#bellcolor{color: #ff8ff0;}
-
-main{padding-top: 70px;}
-
-.debug{
-  background-color: blueviolet;
-  border: peru 1px solid;
-
-
 }
 
 ul{list-style: none;}
 
-
 nav{height: 70px;}
-
 nav a i{color:#5b5858}
+nav form, input {background-color: #e5e5e5}
 
-aside {
-  padding-top: 30px;
-  padding-bottom: 40px;
-  
-  
-
-}
-
-aside a{color: white;}
-
-
-aside li:hover{background-color : #0a2f4f}
-
-
-span#darkblue:hover {opacity: 0.85;}
-
-section{
-  
-  
-  overflow-y: scroll;
-
-}
-
-#res{
-  height: 45px;
-  width:45px;
- 
-
-}
-
-
-#darkblue{background-color: #165bba !important;}
-
-
-#titlebar{background-color: #f7f7f7;}
-
-
-#rowcolor{background-color: #f8f9fa;}
-
-.listcircle{
-  height: 40.8px ;
-  
-  background-color: #f26551 ;
-
-}
-
-
-table i{margin-top: 7px;}
-
-td:first-child {width: 60% ;}
-
-td{width: 10% ;}
-
-
-.minitext{font-size: 0.9rem ;}
-
-nav form, input {
-  
-  background-color: #e5e5e5 !important
-
-}
+main{padding-top: 70px;}
 
 aside{
-  
+  padding-top: 30px;
+  padding-bottom: 40px;
   width: 150px;
   height:100%;
   background-image: url("../assets/img/sidebar-bg.png");
   background-color: #051e34;
 }
+aside a{color: white;}
+aside li:hover{background-color : #0a2f4f}
+span#darkblue:hover {opacity: 0.85;}
+
+section{overflow-y: scroll;}
+section .listcircle{
+  height: 40.8px ;
+  background-color: #f26551 ;
+}
+section table i{margin-top: 7px;}
+section td:first-child {width: 60% ;}
+section td{width: 10% ;}
+section .minitext{font-size: 0.9rem ;}
+
+#navcolor{background-color: #e5e5e5;}
+#bellcolor{color: #ff8ff0;}
+#darkblue{background-color: #165bba !important;}
+#titlebar{background-color: #f7f7f7;}
+#containercolor{background-color: #f8f9fa !important;}
+#res{
+  height: 45px;
+  width:45px;
+}
 
 @media screen and (max-width:992px) {
 
-  
   aside {width: 68px;}
-
-  
   .offcanvas.w-50{width: 100% !important;}
   
-  
- 
-  
-  
 }
+
+
