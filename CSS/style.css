@@ -1,9 +1,22 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+
 body{
   height: 100vh;
+
   font-family: 'Roboto', sans-serif;
 
 }
 
+
+main{padding-top: 70px;}
 
 .debug{
   background-color: blueviolet;
@@ -19,7 +32,7 @@ nav{height: 70px;}
 
 
 aside {
-  padding-top: 100px;
+  padding-top: 30px;
   padding-bottom: 40px;
   
   
@@ -31,7 +44,7 @@ aside a{color: white;}
 
 section{
   
-  padding-top: 70px;
+  
   overflow-y: scroll;
 
 }
@@ -50,13 +63,24 @@ section{
 #titlebar{background-color: #f7f7f7;}
 
 
+#rowcolor{background-color: #f8f9fa;}
+
+.listcircle{
+  height: 40.8px ;
+  
+  background-color: #f26551 ;
+
+}
+
+
+table i{margin-top: 7px;}
 
 td:first-child {width: 60% ;}
 
 td{width: 10% ;}
 
 
-.minitext{font-size: 0.7rem ;}
+.minitext{font-size: 0.8rem ;}
 
 nav form, input {
   
@@ -77,6 +101,8 @@ aside{
   
   aside {width: 68px;}
 
+  
+ 
   
   
 }
