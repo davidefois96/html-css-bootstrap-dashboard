@@ -16,6 +16,11 @@ body{
 }
 
 
+
+#navcolor{background-color: #e5e5e5;}
+
+#bellcolor{color: #ff8ff0;}
+
 main{padding-top: 70px;}
 
 .debug{
@@ -30,6 +35,7 @@ ul{list-style: none;}
 
 nav{height: 70px;}
 
+nav a i{color:#5b5858}
 
 aside {
   padding-top: 30px;
@@ -41,6 +47,11 @@ aside {
 
 aside a{color: white;}
 
+
+aside li:hover{background-color : #0a2f4f}
+
+
+span#darkblue:hover {opacity: 0.85;}
 
 section{
   
@@ -80,7 +91,7 @@ td:first-child {width: 60% ;}
 td{width: 10% ;}
 
 
-.minitext{font-size: 0.8rem ;}
+.minitext{font-size: 0.9rem ;}
 
 nav form, input {
   
@@ -100,7 +111,8 @@ aside{
 
   
   aside {width: 68px;}
-
+  
+  
   
  
   

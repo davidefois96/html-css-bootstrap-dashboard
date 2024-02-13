@@ -33,16 +33,24 @@
       </div>
       
       
-      
-      <form action="" class="w-100 py-2 px-2 rounded-2">
+      <div class="w-100 d-flex align-items-center py-2 px-2 rounded-2 " id="navcolor">
 
         <a href="#"><i class="fa-solid fa-magnifying-glass me-2 "></i></a>
+
+        <form action="" class="w-100   rounded-2">
+
           
+            
+  
+          <input type="text" placeholder="Prova a cercare: Lezioni di Laravel" class="border-0 w-100 ">
+  
+  
+        </form>
 
-        <input type="text" placeholder="Prova a cercare: Lezioni di Laravel" class="border-0  w-75 ">
 
 
-      </form>
+      </div>
+      
       
 
       <ul class="d-flex h-100 m-0 p-0 ">
@@ -52,7 +60,7 @@
         <li class="ms-3 d-none d-lg-block"><a href="#"><i class="fa-solid fa-ellipsis-vertical  "></i></a></li>
         <li class="ms-3 ">
           <div class="dropdown">
-            <button class="btn m-0 p-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn m-0 p-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false" id="bellcolor">
               <i class="fa-solid fa-bell"></i>
             </button>
             <ul class="dropdown-menu dropdown-menu-end ">
@@ -175,8 +183,91 @@
          <div class="col-12  col-sm-4 col-lg-2 offset-lg-1 pt-3 ">
 
           <span class="me-2">Nuovo Studente</span>
-          <span>
-            <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+
+          <span >
+
+
+            <button class="btn btn-outline-light " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+            <div class="offcanvas offcanvas-end w-100  " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+
+              <div class="offcanvas-body">
+
+                <div class="row g-3">
+                  <div class="col">
+                    <label for="inputName4" class="form-label">Nome</label>
+
+                    <input type="text" class="form-control bg-white " aria-label="First name">
+                  </div>
+                  <div class="col">
+                    <label for="inputSurname4" class="form-label">Cognome</label>
+                    <input type="text" class="form-control bg-white " aria-label="Last name">
+                  </div>
+                </div>
+                
+
+
+
+
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    
+                    <input type="email" class="form-control bg-white " id="inputEmail4">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control bg-white " id="inputPassword4">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Indirizzo</label>
+                    <input type="text" class="form-control bg-white" id="inputAddress">
+                  </div>
+
+                  <div class="input-group">
+                    
+                    <input type="file" class="form-control bg-white" id="inputGroupFile02" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                  </div> 
+
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Città</label>
+                    <input type="text" class="form-control bg-white" id="inputCity">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label">Stato</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Scegli</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputZip" class="form-label ">CAP</label>
+                    <input type="text" class="form-control bg-white" >
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input bg-white " type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Seleziona per proseguire
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Salva</button>
+                    <button type="reset" class="btn btn-warning text-white  ">Svuota</button>
+                  </div>
+                </form>
+
+              </div>
+
+
+
+            </div>
 
           </span>
 
@@ -211,8 +302,8 @@
                   <thead>
                     <tr>
                       <th scope="col">Nome</th>
-                      <th scope="col" class="d-none d-lg-table-cell  ">Data Inizio</th>
-                      <th scope="col" class="d-none d-lg-table-cell">ROI</th>
+                      <th scope="col" class="d-none d-sm-table-cell  ">Data Inizio</th>
+                      <th scope="col" class="d-none d-sm-table-cell">ROI</th>
                       <th scope="col">Stato</th>
                       <th scope="col">Azioni</th>
                     </tr>
@@ -226,8 +317,8 @@
                         </span>
                         <span class="ms-1 ">Classe 75</span>
                       </th>
-                      <td class="d-none d-lg-table-cell">15 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-sm-table-cell">15 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td>
                         <span class="badge text-bg-success">Done</span>
                       </td>
@@ -254,8 +345,8 @@
                         </span>
                         <span class="ms-1 ">Classe 76</span>
                       </th>
-                      <td class="d-none d-lg-table-cell">16 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-sm-table-cell">16 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td>
                         <span class="badge text-bg-success">Done</span>
                       </td>
@@ -282,8 +373,8 @@
                         </span>
                         <span class="ms-1 ">Classe 77</span>
                       </th>
-                      <td class="d-none d-lg-table-cell">17 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-sm-table-cell">17 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td>
                         <span class="badge   bg-warning ">Process</span>
                       </td>
@@ -310,8 +401,8 @@
                         </span>
                         <span class="ms-1 ">Classe 78</span>
                       </th>
-                      <td class="d-none d-lg-table-cell">18 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-sm-table-cell">18 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td>
                         <span class="badge text-bg-success">Done</span>
                       </td>
@@ -338,8 +429,8 @@
                         </span>
                         <span class="ms-1 ">Classe 79</span>
                       </th>
-                      <td class="d-none d-lg-table-cell">19 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-sm-table-cell">19 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td>
                         <span class="badge bg-danger">Failed</span>
                       </td>
@@ -366,8 +457,8 @@
                         </span>
                         <span class="ms-1 ">Classe 80</span>
                       </th>
-                      <td class="d-none d-lg-table-cell">20 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-sm-table-cell">20 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td>
                         <span class="badge text-bg-success">Done</span>
                       </td>
@@ -394,8 +485,8 @@
                         </span>
                         <span class="ms-1 ">Classe 81</span>
                       </th>
-                      <td class="d-none d-lg-table-cell">21 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-sm-table-cell">21 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td>
                         <span class="badge  bg-danger">Failed</span>
                       </td>
@@ -422,8 +513,8 @@
                         </span>
                         <span class="ms-1 ">Classe 82</span>
                       </th>
-                      <td class="d-none d-lg-table-cell">22 Feb 2021</td>
-                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="d-none d-sm-table-cell">22 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td>
                         <span class="badge text-bg-success">Done</span>
                       </td>
@@ -450,13 +541,13 @@
             </div>
 
 
-            <div class="card mt-2 ">
+            <div class="card mt-4 ">
               <div class="card-header fs-3 ">
                 F.A.Q.
               </div>
               <div class="card-body">
 
-                <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion accordion-flush " id="accordionFlushExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -499,13 +590,13 @@
 
           <!-- altra colonna -->
 
-          <div class="col-12 col-lg-4  pt-lg-4 ">
+          <div class="col-12 col-lg-4 pt-4  ">
 
-            <div class="card my-2 ms-0 my-lg-0  ">
+            <div class="card my-2 ms-0 my-lg-0 mt-4  ">
               <div class="card-header fs-3 ">
                 Todo
               </div>
-              <div class="card-body">
+              <div class="card-body minitext">
 
                 <ul class="list-group">
                   <li class="list-group-item">
@@ -526,9 +617,9 @@
             </div>
 
 
-            <div class="p-3 mt-2 rounded-2 border border-secondary-subtle  ">
+            <div class="p-3 mt-4 rounded-2 border border-secondary-subtle bg-white   ">
 
-              <div class="card my-2 my-lg-0 " >
+              <div class="card my-2 my-lg-0 minitext" >
                 <img src="assets/img/stats.jpeg" class="card-img-top" alt="stats">
                 <div class="card-body">
                   <h4 class="card-title">Utenti attivi</h4>
